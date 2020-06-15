@@ -13,7 +13,7 @@ let str = 'John';
 /**
  * TODO create variable named str2 and set value equal str plus " Dou"
  */
-let str2 =' Dou';
+let str2 =str + ' Dou';
 /**
  * TODO create variable named bool and set value equal to comparison of int and int2 variables
  */
@@ -32,11 +32,11 @@ let fifth = arr[4];
 /**
  * TODO create variable named human and set value as object with key firstName and value "John"
  */
-let human = {firstName:str};
+let human = {firstName: "John"};
 /**
  * TODO set new key of human object named lastName and value "Dou"
  */
-human.lastName = str2;
+human.lastName = "Dou";
 /**
  * TODO set new key of human object named fullName and value of concatenation of firstName and lastName values
  */
