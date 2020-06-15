@@ -13,7 +13,7 @@ var str = 'John';
 /**
  * TODO create variable named str2 and set value equal str plus " Dou"
  */
-var str2 =str + ' Dou';
+var str2 = str + ' Dou';
 /**
  * TODO create variable named bool and set value equal to comparison of int and int2 variables
  */
