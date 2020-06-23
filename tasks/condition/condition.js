@@ -4,7 +4,7 @@
  * Task - rewrite IF..ELSE to ternary operator
  */
 {
-  const a = 3,
+  const ab = 3,
         b = 2;
 
   if (a + b < 4) {
