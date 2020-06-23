@@ -13,7 +13,7 @@
 function calculateDiscount(redemption) {
   let discount; 
 //PLACE YOUR CODE HERE
-  if (redemption<350){
+  if (redemption>=0 && redemption<350){
     discount=0;
   } else if (redemption>=351 && redemption<1350){
     discount=15;
