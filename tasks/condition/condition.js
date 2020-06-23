@@ -14,6 +14,10 @@
   }
 }
 
+const a = 3,
+      b = 2;
+const condValue1 = (a + b < 4) ? console.log('wrong') : console.log('too much');
+
 /** TODO
  * The system receives two params x and y.
  * Implement the logic when z equal to sum of x and y in case both of them less than 10 or multiplication in case of greater or equal than 10
@@ -23,7 +27,22 @@
 {
     const x = 3;
     const y = 7;
+
+    if (x<10 && y<10) {
+      const z = x+y;
+      //console.log(z);
+    } else {
+      const z = x*y;
+      //console.log(z);
+    }
+   
 }
+
+const x = 3;
+const y = 7;
+let z;
+const condValue2 = (x<10 && y<10) ? z = x+y : z = x*y;
+//console.log(z);
 
 /** TODO
  * The system receives 3 params - x, y, operator.
@@ -35,4 +54,25 @@
     const x = 3;
     const y = 7;
     const operator = "add";
+    let z;
+
+    switch(operator){
+      case "add":
+        z = x+y;
+        //console.log(z);
+        break;
+      case "subtract":
+        z = x-y;
+        //console.log(z);
+        break;
+      case "multiply":
+        z = x*y;
+        //console.log(z);
+        break;
+      case "divide":
+        z = x/y;
+        //console.log(z);
+        break;
+    }
 }
+
