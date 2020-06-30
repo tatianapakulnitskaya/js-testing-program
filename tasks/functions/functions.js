@@ -147,13 +147,13 @@ const myObject = {
 		//write your code here
 		Object.keys(this).forEach(function (key) {
 			console.log(key);
-		})
+		});
 
 	},
 	call() {
 		//write your code here
-		let str;
-		return srt = "My name is " + this.name + " " + this.lastName + " and I am " + this.age + " years old. My best friend is " + this.friends[2];
+		let srt = "My name is " + this.name + " " + this.lastName + " and I am " + this.age + " years old. My best friend is " + this.friends[2];
+		return str;
 	}
 };
 //myObject.keys();
