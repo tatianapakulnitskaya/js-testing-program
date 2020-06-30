@@ -2,6 +2,7 @@
  * write function that adds two numbers
  *
  */
+
 function add(a, b) {
 	var result = a + b;
 	return result;
@@ -16,6 +17,7 @@ function add(a, b) {
  *    lastName: "Dou"
  * }
  */
+
 var person = {
 	firstName: "John",
 	lastName: "Dou"
@@ -30,6 +32,7 @@ function getFullName(object) {
  * write fuction that checks is number is odd
  * true if odd, false if even
  */
+
 function isOdd(n) {
 	if (n % 2 == 0)
 		return false;
@@ -42,6 +45,7 @@ function isOdd(n) {
  * write function that return shortest of words in given array
  * e.g ["one", "two", "three"] should return one
  */
+
 function getShortest(wordArray) {
 	let shortest = null;
 	for (i = 0; i < wordArray.length; i++) {
@@ -58,6 +62,7 @@ function getShortest(wordArray) {
  * write function that returns word google with given numbers of "o" symbols
  * e.g getGoogle(5) should return "gooooogle"
  */
+
 function getGoogle(n) {
 	let String = "ggle";
 	let ToAdd = "o".repeat(n);
@@ -76,6 +81,7 @@ function getGoogle(n) {
  *    age: 42
  * }
  */
+
 function getUser(firstName = null, lastName = null, age = null) {
 	var object = {
 		firstname: firstName,
