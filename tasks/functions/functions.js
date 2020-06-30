@@ -6,7 +6,8 @@ function add(a, b) {
 	var result = a + b;
 	return result;
 }
-console.log(add(2, 3));
+//console.log(add(2, 3));
+
 /**
  * write function that return first and last name of given object
  * properties firstName and lastName
@@ -16,17 +17,14 @@ console.log(add(2, 3));
  * }
  */
 var person = {
-
 	firstName: "John",
 	lastName: "Dou"
 };
 
 function getFullName(object) {
-
 	return object.firstName + " " + object.lastName;
-
 }
-console.log(getFullName(person));
+//console.log(getFullName(person));
 
 /**
  * write fuction that checks is number is odd
@@ -38,7 +36,8 @@ function isOdd(n) {
 	else
 		return true;
 }
-console.log(isOdd(3));
+//console.log(isOdd(3));
+
 /**
  * write function that return shortest of words in given array
  * e.g ["one", "two", "three"] should return one
@@ -50,11 +49,11 @@ function getShortest(wordArray) {
 			shortest = wordArray[i];
 		else if (wordArray[i].length < shortest.length)
 			shortest = wordArray[i];
-
 	}
 	return shortest;
 }
-console.log(getShortest(["one", "two", "three"]));
+//console.log(getShortest(["one", "two", "three"]));
+
 /**
  * write function that returns word google with given numbers of "o" symbols
  * e.g getGoogle(5) should return "gooooogle"
@@ -66,11 +65,9 @@ function getGoogle(n) {
 	newString = origString.slice(0, indexPosition) +
 		stringToAdd +
 		origString.slice(indexPosition);
-
 	return newString;
 }
-
-console.log(getGoogle(5));
+//console.log(getGoogle(5));
 
 /**
  * write function that returns object based on given information (params may be null)
@@ -82,18 +79,15 @@ console.log(getGoogle(5));
  * }
  */
 function getUser(firstName = null, lastName = null, age = null) {
-
 	var object = {
 		firstname: firstName,
 		lastname: lastName,
 		age: age
 	};
-
 	return object;
-
-
 }
-console.log(getUser("John", "Dou", 42));
+//console.log(getUser("John", "Dou", 42));
+
 /**
  * write function that calculates total path traveled.
  * path represended as array of objects with field distance and direction
@@ -109,7 +103,6 @@ var path = [{
 		distance: 2402
 	}
 ]
-
 function getTotalPath(path) {
 	let total = 0;
 	for (i = 0; i < path.length; i++) {
@@ -117,7 +110,8 @@ function getTotalPath(path) {
 	}
 	return total;
 }
-console.log(getTotalPath(path));
+//console.log(getTotalPath(path));
+
 /**
  * write a function that will calculate a discount considering the Amount
  * and the percentage (hint: you need to use the Closure here)
@@ -130,9 +124,9 @@ function discountFunction(amount) {
 		return percentage - amount * percentage * 0.01;
 	}
 }
+//const discountFunction10 = discountFunction(10);
+//console.log(discountFunction10(90));
 
-const discountFunction10 = discountFunction(10);
-console.log(discountFunction10(90));
 /**
  * Write the methods inside the given objects that:
  * 1. console logs keys of the given object
@@ -154,8 +148,8 @@ const myObject = {
 		console.log("My name is " + this.name + " " + this.lastName + " and I am " + this.age + " years old. My best friend is " + this.friends[2]);
 	}
 };
-myObject.keys();
-myObject.call();
+//myObject.keys();
+//myObject.call();
 
 
 module.exports = {
