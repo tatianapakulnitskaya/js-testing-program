@@ -47,16 +47,15 @@ function isOdd(n) {
  */
 
 function getShortest(wordArray) {
-	let shortest = null;
-	for (i = 0; i < wordArray.length; i++) {
-		if (shortest == null)
-			shortest = wordArray[i];
-		else if (wordArray[i].length < shortest.length)
+	let shortest = wordArray[0];
+	for (i = 1; i < wordArray.length; i++) {
+		if (wordArray[i].length < shortest.length)
 			shortest = wordArray[i];
 	}
 	return shortest;
 }
 //console.log(getShortest(["one", "two", "three"]));
+
 
 /**
  * write function that returns word google with given numbers of "o" symbols
@@ -67,7 +66,7 @@ function getGoogle(n) {
 	let String = "ggle";
 	let ToAdd = "o".repeat(n);
 	let Position = 1;
-	newString = String.slice(0, Position) + ToAdd + String.slice(Position);
+	let newString = String.slice(0, Position) + ToAdd + String.slice(Position);
 	return newString;
 }
 //console.log(getGoogle(5));
@@ -146,11 +145,15 @@ const myObject = {
 	friends: ['Mike', 'Alan', 'Daniel'],
 	keys() {
 		//write your code here
-		console.log(Object.keys(myObject));
+		Object.keys(this).forEach(function (key) {
+			console.log(key);
+		})
+
 	},
 	call() {
 		//write your code here
-		console.log("My name is " + this.name + " " + this.lastName + " and I am " + this.age + " years old. My best friend is " + this.friends[2]);
+		let str;
+		return srt = "My name is " + this.name + " " + this.lastName + " and I am " + this.age + " years old. My best friend is " + this.friends[2];
 	}
 };
 //myObject.keys();
