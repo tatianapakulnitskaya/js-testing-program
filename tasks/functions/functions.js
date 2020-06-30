@@ -59,12 +59,10 @@ function getShortest(wordArray) {
  * e.g getGoogle(5) should return "gooooogle"
  */
 function getGoogle(n) {
-	let origString = "ggle";
-	let stringToAdd = "o".repeat(n);
-	let indexPosition = 1;
-	newString = origString.slice(0, indexPosition) +
-		stringToAdd +
-		origString.slice(indexPosition);
+	let String = "ggle";
+	let ToAdd = "o".repeat(n);
+	let Position = 1;
+	newString = String.slice(0, Position) + ToAdd + String.slice(Position);
 	return newString;
 }
 //console.log(getGoogle(5));
