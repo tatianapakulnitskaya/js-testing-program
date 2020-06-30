@@ -102,7 +102,8 @@ var path = [{
 		direction: "Kiyv - Paris",
 		distance: 2402
 	}
-]
+];
+
 function getTotalPath(path) {
 	let total = 0;
 	for (i = 0; i < path.length; i++) {
@@ -122,7 +123,7 @@ function getTotalPath(path) {
 function discountFunction(amount) {
 	return function (percentage) {
 		return percentage - amount * percentage * 0.01;
-	}
+	};
 }
 //const discountFunction10 = discountFunction(10);
 //console.log(discountFunction10(90));
