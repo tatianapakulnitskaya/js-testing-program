@@ -29,7 +29,7 @@ function printCharacterNames(chars) {
  * @return {Array} - non human characters
  */
 function getNonHumanCharacters(chars) {
-    return chars.filter(char => char.species != "Human");
+    return chars.filter(char => char.species !== "Human");
 }
 //console.log(getNonHumanCharacters(chars));
 
