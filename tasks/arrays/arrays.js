@@ -9,7 +9,6 @@ const chars = require('./characters.json');
 function getCharactersNames(chars) {
     return chars.map(char => char.name);
 }
-
 //console.log(getCharactersNames(chars));
 
 /**
@@ -33,6 +32,7 @@ function getNonHumanCharacters(chars) {
     return chars.filter(char => char.species != "Human");
 }
 //console.log(getNonHumanCharacters(chars));
+
 /**
  * return info about character named 'Jerry Smith'
  * @param {Array} chars
@@ -43,6 +43,7 @@ function getJerryInfo(chars) {
     return chars.find(char => char.name === "Jerry Smith");
 }
 //console.log(getJerryInfo(chars));
+
 /**
  * check if all characters are human. return true if all, false if not
  * @param {Array} chars
@@ -54,6 +55,7 @@ function isAllHuman(chars) {
     return chars.every(char => char.species == "Human");
 }
 //console.log(isAllHuman(chars));
+
 /**
  * check if there are any Fish-Person characters. return true if any, false if not
  * @param {Array} chars
@@ -63,6 +65,7 @@ function isAnyFishPerson(chars) {
     return chars.some(char => char.type == "Fish-Person");
 }
 //console.log(isAnyFishPerson(chars));
+
 /**
  * 1. Write a method to find an index of minimal item from an array;
  * @param {Array} arr
@@ -73,6 +76,7 @@ function minItem(arr) {
     return arr.indexOf(Math.min.apply(Math, arr));
 }
 //console.log(minItem([1,2,3,4]));
+
 module.exports = {
     getCharactersNames,
     printCharacterNames,
