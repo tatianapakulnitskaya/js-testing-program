@@ -1,7 +1,3 @@
-const {
-    getFullName
-} = require("../functions/functions");
-
 /**
  * create object person with firstName and lastName properties
  * implement method getFullName that returns full name
