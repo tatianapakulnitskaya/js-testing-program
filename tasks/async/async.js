@@ -11,7 +11,7 @@ const {
 function printDataCallback(error, callback) {
     console.log(callback);
 }
-callbackFunction(printDataCallback);
+//callbackFunction(printDataCallback);
 
 /**
  * console.log data got from promiseFunction
@@ -24,7 +24,7 @@ function printDataPromise() {
         console.log(res);
     });
 }
-printDataPromise();
+//printDataPromise();
 
 /**
  * console.log data got from promiseFunction using async/await
@@ -33,7 +33,7 @@ async function printDataAsyncAwait() {
     var result = await promiseFunction();
     console.log(result);
 }
-printDataAsyncAwait();
+//printDataAsyncAwait();
 
 /**
  * throw error data from callbackFunctionError
@@ -44,7 +44,7 @@ function handleErrorCallback(error, result) {
         return;
     }
 }
-callbackFunctionError(handleErrorCallback);
+//callbackFunctionError(handleErrorCallback);
 
 /**
  * throw error come from promiseFunctionError
@@ -58,7 +58,7 @@ function handlePromiseError() {
         console.log(error.message);
     });
 }
-handlePromiseError();
+//handlePromiseError();
 /**
  * throw error come from promiseFunctionError using async/await
  */
@@ -66,7 +66,7 @@ async function handleAsyncAwaitError() {
     let response = await promiseFunctionError().catch(err => console.log(err.message));
     //console.log(response);
 }
-handleAsyncAwaitError();
+//handleAsyncAwaitError();
 
 module.exports = {
     printDataCallback,
