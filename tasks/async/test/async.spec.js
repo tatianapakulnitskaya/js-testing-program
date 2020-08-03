@@ -32,9 +32,11 @@ describe('promise', () => {
         const calls = consoleLogSpy.getCalls().map(call => call.args[0]);
         expect(calls[0]).to.equal('this is data that be accessible via promise');
     });
-
+ 
     it('should handle error', () => {
-        expect(handlePromiseError).to.throw('Error');
+        return handlePromiseError().catch(err => {
+            expect(err.message).to.equal('Error');
+        });
     });
 });
 
