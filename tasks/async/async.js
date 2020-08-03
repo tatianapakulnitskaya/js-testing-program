@@ -4,24 +4,26 @@ const {
     callbackFunctionError,
     promiseFunctionError
 } = require("./async_api");
+const {
+    connect
+} = require("http2");
 
 /**
  * console.log data got from callbackFunction
  */
-function printDataCallback(error, callback) {
-    console.log(callback);
+function printDataCallback() {
+    const fs = require('fs');
+    fs.readFile("./async_api.js", 'utf-8', (err, data) => {
+        console.log(data);
+    });
 }
-//callbackFunction(printDataCallback);
-
+printDataCallback();
 /**
  * console.log data got from promiseFunction
  */
 function printDataPromise() {
-    const promise = new Promise((resolve, reject) => {
-        resolve(promiseFunction());
-    });
-    promise.then((res) => {
-        console.log(res);
+    return promiseFunction().then(function (data) {
+        console.log(data);
     });
 }
 //printDataPromise();
@@ -38,24 +40,22 @@ async function printDataAsyncAwait() {
 /**
  * throw error data from callbackFunctionError
  */
-function handleErrorCallback(error, result) {
-    if (error !== null) {
-        console.log(error.message);
-        return;
-    }
+function handleErrorCallback() {
+    const fs = require('fs');
+    fs.readFile("./async_api.js", 'utf-8', (err) => {
+        if (err != null) throw err;
+
+    });
 }
-//callbackFunctionError(handleErrorCallback);
+handleErrorCallback();
 
 /**
  * throw error come from promiseFunctionError
  */
 
 function handlePromiseError() {
-    const promise1 = new Promise(function (resolve, reject) {
-        resolve(promiseFunctionError());
-    });
-    promise1.catch(function (error) {
-        console.log(error.message);
+    return promiseFunctionError().catch(err => {
+        throw err;
     });
 }
 //handlePromiseError();
