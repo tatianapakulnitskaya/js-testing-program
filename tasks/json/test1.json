@@ -1,0 +1,56 @@
+{
+    
+"entries": [
+    {
+        "entry": {
+            "createdAt": "2020-03-06T13:23:24.928+0000",
+            "isFolder": false,
+            "isFile": true,
+            "createdByUser": {
+                "id": "admin",
+                "displayName": "Administrator"
+            },
+            "modifiedAt": "2020-03-06T13:23:24.928+0000",
+            "modifiedByUser": {
+                "id": "admin",
+                "displayName": "Administrator"
+            },
+            "name": "077b1523-56f0-492a-b954-1269e3acc191.html",
+            "id": "ff76f5ac-c4be-482d-b107-28d1ced8c758",
+            "nodeType": "wk:document",
+            "content": {
+                "mimeType": "text/html",
+                "mimeTypeName": "HTML",
+                "sizeInBytes": 52141,
+                "encoding": "UTF-8"
+            },
+            "parentId": "04c05d0b-7535-4d50-a112-e23dfd904e11"
+        }
+    },
+    {
+        "entry": {
+            "createdAt": "2020-03-06T13:23:24.971+0000",
+            "isFolder": false,
+            "isFile": true,
+            "createdByUser": {
+                "id": "admin",
+                "displayName": "Administrator"
+            },
+            "modifiedAt": "2020-03-06T13:23:24.971+0000",
+            "modifiedByUser": {
+                "id": "admin",
+                "displayName": "Administrator"
+            },
+            "name": "077d3a4c-a2fe-4ab9-9046-89c0ce5c5b38.html",
+            "id": "3a6fba1d-f862-4353-917e-58744dc7b740",
+            "nodeType": "wk:document",
+            "content": {
+                "mimeType": "text/html",
+                "mimeTypeName": "HTML",
+                "sizeInBytes": 21510,
+                "encoding": "UTF-8"
+            },
+            "parentId": "04c05d0b-7535-4d50-a112-e23dfd904e11"
+        }
+    }]
+}
